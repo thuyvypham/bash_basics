@@ -14,3 +14,10 @@ fi
 
 # exercise: write a script that prints whether it is 
 # morning or not
+current_hour=$(date +%H)
+
+if (( current_hour >= 6 && current_hour < 12 )); then
+    echo "Good morning!"
+else
+    echo "It's not morning."
+fi
